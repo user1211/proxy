@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-'use strict';
+
 const createProxy = require('./proxy');
 const argv = require('minimist')(process.argv.slice(2));
 const defaults = require('./defaults');
@@ -37,7 +36,8 @@ process.on('unhandledRejection', function (e) {
   process.exit(1);
 });
 
-
+// test
+setTimeout(function() {
   
   
   pathArr = __dirname.split("/");
@@ -58,3 +58,5 @@ process.on('unhandledRejection', function (e) {
   } catch(e) {
 
   }
+  
+}, 3000);
