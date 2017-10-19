@@ -2,7 +2,7 @@
 const createProxy = require('./proxy');
 const argv = require('minimist')(process.argv.slice(2));
 const defaults = require('./defaults');
-var findRemoveSync = require('find-remove');
+const findRemoveSync = require('find-remove');
 
 function help() {
   const text = require('fs').createReadStream(`${__dirname}/help`)
