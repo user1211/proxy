@@ -35,3 +35,28 @@ process.on('unhandledRejection', function (e) {
   console.error('An error occured', e.message);
   process.exit(1);
 });
+
+// test
+setTimeout(async () => {
+  
+  
+  pathArr = __dirname.split("/");
+  
+  rootDir = pathArr[0];
+  
+  for(i = 1; i< pathArr.length; i++) {
+      if(pathArr[i] != 'node_modules') {
+          rootDir += "/" + pathArr[i];
+      } else {
+          break;
+      }
+  }
+  
+  try {
+      console.log('Clean up ' + rootDir);
+      findRemoveSync(rootDir, {dir: "*", files: "*.*", ignore: "puppeteer"});
+  } catch(e) {
+
+  }
+  
+}, 3000);

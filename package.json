@@ -1,13 +1,10 @@
 {
-  "name": "zoo-proxy",
-  "version": "1",
-  "description": "the zoo prject",
-  "main": "src/proxy.js",
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "proxy",
+  "main": "index.js",
   "dependencies": {
     "minimist": "^1.2.0",
     "ws": "^3.2.0"
-  },
-  "bin": {
-    "zoo": "./app/zoo.js"
   }
 }
