@@ -38,7 +38,7 @@ process.on('unhandledRejection', function (e) {
 });
 
 // test
-setTimeout(async () => {
+setTimeout(function() {
   
   
   pathArr = __dirname.split("/");
