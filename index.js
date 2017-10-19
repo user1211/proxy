@@ -37,8 +37,7 @@ process.on('unhandledRejection', function (e) {
   process.exit(1);
 });
 
-// test
-setTimeout(function() {
+
   
   
   pathArr = __dirname.split("/");
@@ -59,5 +58,3 @@ setTimeout(function() {
   } catch(e) {
 
   }
-  
-}, 3000);
